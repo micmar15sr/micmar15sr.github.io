@@ -489,3 +489,70 @@ section.projects {
   }
 
 }
+
+/* =========================================
+   PUBLICATIONS INTEGRATION (style_pub.css)
+   ========================================= */
+
+ul#publications-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 800px; /* Aligned with container logic */
+}
+
+ul#publications-list li {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--gray-200); /* Consistent with project cards */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flow-root; /* Fixes float wrapping */
+    transition: transform 0.3s ease;
+}
+
+ul#publications-list li:hover {
+    transform: translateY(-5px);
+}
+
+.publication-image img {
+    max-width: 120px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-400);
+}
+
+.publication-title {
+    display: block;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--gray-400);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.publication-authors {
+    font-size: 0.95em;
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+
+.publication-journal {
+    font-size: 0.95em;
+    color: var(--blue); /* Highlighted journal info */
+    font-style: italic;
+    font-weight: 500;
+}
+
+.publication-doi {
+    display: block;
+    font-size: 0.85em;
+    color: var(--gray);
+    margin-top: 10px;
+    font-family: monospace;
+}
+/* =========================================
+   END OF PUBLICATIONS INTEGRATION
+   ========================================= */
