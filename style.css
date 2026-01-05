@@ -570,6 +570,107 @@ ul#publications-list li:hover {
 /* =========================================
    END OF PUBLICATIONS INTEGRATION
    ========================================= */
+
+
+
+
+/* =========================================
+   RÉSUMÉ INTEGRATION (style_resume.css)
+   ========================================= */
+
+ul#role-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 900px; /* Aligned with container logic */
+    
+}
+
+ul#role-list li {
+
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--white);
+
+    /* --- NEW COLUMN LOGIC --- */
+    display: flex;          /* This creates the two columns */
+    align-items: flex-start; /* Keeps image and text at the top */
+    gap: 20px;              /* Space between the image and the text column */
+}
+
+
+
+.role-image img {
+width: 150px;           /* Fixed width for the image column */
+    height: auto;
+    border-radius: 5px;
+    flex-shrink: 0;         /* Prevents the image from being squeezed */
+
+}
+/* Create a container for all text to keep it aligned */
+.role-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.role-authors {
+    font-size: 0.95em;
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+
+
+
+.role-role {
+    font-size: 0.95em;
+    color: var(--blue); /* Highlighted journal info */
+    font-style: italic;
+    font-weight: 500;
+}
+
+.role-thesistopic {
+    font-size: 0.95em;
+    color: var(--blue); /* Highlighted journal info */
+    font-style: italic;
+    justify-content: flex-start; /* Keeps them together on the left */
+
+    font-weight: 500;
+}   
+/* This forces links in the publication list to be dark/blue instead of white */
+#publications-list li a {
+    display: block;
+    font-size: 0.85em;
+    color: var(--gray);
+    margin-top: 10px;
+    text-decoration: underline; /* Good for accessibility so people know it's a link */
+}
+
+.role-header {
+    display: flex;
+    justify-content: flex-start; /* Keeps them together on the left */
+    align-items: baseline;          /* Aligns text bottoms perfectly */
+    margin-bottom: 8px;
+}
+
+/* Update your existing classes to remove conflicting margins */
+.role-title {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--gray-400);
+    margin-bottom: 0; /* Margin is now handled by the header container */
+    line-height: 1.4;
+    
+}
+
+.role-period {
+    font-size: 0.85em;
+    color: var(--gray); /* Usually looks better slightly lighter than the title */
+    font-weight: 500;
+}
+/* =========================================
+   END OF RESùmè INTEGRATION
+   ========================================= */
    @media screen and (max-width: 900px) {
     header .content ul { display: none; }
     
