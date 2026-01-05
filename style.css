@@ -516,7 +516,7 @@ ul#publications-list li:hover {
 }
 
 .publication-image img {
-    max-width: 120px;
+    max-width: 300px;
     height: auto;
     float: left;
     margin-right: 20px;
