@@ -516,7 +516,7 @@ ul#publications-list li:hover {
 }
 
 .publication-image img {
-    max-width: 300px;
+    max-width: 150px;
     height: auto;
     float: left;
     margin-right: 20px;
@@ -539,20 +539,46 @@ ul#publications-list li:hover {
     margin-bottom: 5px;
 }
 
+.publication-doi {
+    display: block;
+    font-size: 0.85em;
+    color: var(--dark);
+    margin-top: 10px;
+}
+
 .publication-journal {
     font-size: 0.95em;
     color: var(--blue); /* Highlighted journal info */
     font-style: italic;
     font-weight: 500;
 }
-
-.publication-doi {
+/* This forces links in the publication list to be dark/blue instead of white */
+#publications-list li a {
     display: block;
     font-size: 0.85em;
     color: var(--gray);
     margin-top: 10px;
-    font-family: monospace;
+    text-decoration: underline; /* Good for accessibility so people know it's a link */
 }
+
+
 /* =========================================
    END OF PUBLICATIONS INTEGRATION
    ========================================= */
+   @media screen and (max-width: 900px) {
+    header .content ul { display: none; }
+    
+    .publication-image img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        max-width: 100%;
+    }
+    
+    ul#publications-list li {
+        text-align: center;
+        padding: 15px;
+    }
+    
+    div.container { width: 90%; }
+}
