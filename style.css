@@ -509,10 +509,15 @@ ul#publications-list li {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     display: flow-root; /* Fixes float wrapping */
     transition: transform 0.3s ease;
+    border-radius: 12px;       /* Adjust this number: 8px for subtle, 20px for very round */
+    overflow: hidden;          /* Ensures content doesn't "leak" out of the corners */
 }
 
 ul#publications-list li:hover {
+   
     transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+
 }
 
 .publication-image img {
@@ -573,6 +578,10 @@ ul#publications-list li:hover {
         display: block;
         margin: 0 auto 15px auto;
         max-width: 100%;
+    }
+        header .content span.logo {
+        text-align: center;
+        font-size: 16px;      /* Shrink logo text slightly */
     }
     
     ul#publications-list li {
