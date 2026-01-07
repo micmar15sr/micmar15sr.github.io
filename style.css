@@ -624,9 +624,10 @@ width: 150px;           /* Fixed width for the image column */
 
 .role-role {
     font-size: 0.95em;
-    color: var(--blue); /* Highlighted journal info */
+    color: var(--gray-200); /* Highlighted journal info */
     font-style: italic;
     font-weight: 500;
+    margin-bottom: 8px;
 }
 
 .role-thesistopic {
@@ -638,11 +639,11 @@ width: 150px;           /* Fixed width for the image column */
     font-weight: 500;
 }   
 /* This forces links in the publication list to be dark/blue instead of white */
-#publications-list li a {
+#role-list li a {
     display: block;
     font-size: 0.85em;
     color: var(--gray);
-    margin-top: 10px;
+    margin-top: 0px;
     text-decoration: underline; /* Good for accessibility so people know it's a link */
 }
 
