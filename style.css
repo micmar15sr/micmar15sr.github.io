@@ -682,7 +682,7 @@ width: 150px;           /* Fixed width for the image column */
 /* =========================================
    END OF RESùmè INTEGRATION
    ========================================= */
-   @media screen and (max-width: 900px) {
+/*   @media screen and (max-width: 900px) {
     header .content ul { display: none; }
     
     .publication-image img {
@@ -693,7 +693,7 @@ width: 150px;           /* Fixed width for the image column */
     }
         header .content span.logo {
         text-align: center;
-        font-size: 16px;      /* Shrink logo text slightly */
+        font-size: 16px;      /* Shrink logo text slightly */ /*
     }
     
     ul#publications-list li {
@@ -702,4 +702,62 @@ width: 150px;           /* Fixed width for the image column */
     }
     
     div.container { width: 90%; }
+} */
+@media screen and (max-width: 900px) {
+    /* 1. Header Adjustments */
+    header {
+        height: auto;          /* Allow header to grow to fit menu */
+        margin-top: 0;         /* Save screen space on mobile */
+        margin-bottom: 20px;
+        padding: 10px 0;
+    }
+
+    header .content {
+        flex-direction: column; /* Stack logo on top, menu below */
+        gap: 10px;
+        width: 95%;            /* Use more width on small screens */
+    }
+
+    header .content ul {
+        display: flex;         /* Show the menu */
+        justify-content: center;
+        flex-wrap: wrap;       /* Wrap links if they are too wide for one line */
+        gap: 20px;             /* Smaller gap for mobile */
+        font-size: 14px;
+    }
+
+    header .content span.logo {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    /* 2. Publication/Resume Adjustments */
+    .publication-image img, .role-image img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        max-width: 120px;      /* Smaller images on mobile */
+    }
+
+    ul#publications-list li, ul#role-list li {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .role-header {
+        justify-content: center; /* Center the title and date */
+        flex-wrap: wrap;
+    }
+
+    /* 3. Main Content Adjustments */
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    div.container { width: 95%; }
 }
