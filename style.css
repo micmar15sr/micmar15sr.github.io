@@ -133,11 +133,13 @@ main button {
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 main .btn .cv {
     width: 143px;
     height: 42px;
+    
     color: var(--dark);
     background-color: var(--yellow);
     border: 0;
@@ -286,6 +288,7 @@ section.projects div.card{
     height: 350px; /* 240px before */
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     align-items: center;
     background-color: var(--gray-200);
     /*border: 1px solid var(--gray-200);*/
