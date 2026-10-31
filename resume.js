@@ -2,7 +2,7 @@
 
 const rolesummary = [
      {
-        image: "https://www.idsia.usi-supsi.ch/documents/43487559/19dc699c-8039-82e8-41dd-ed8e7819e601",
+        image: "https://health.idsia.ch/assets/images/idsia_logo.png",
         institution: "IDSIA - Istituto Dalle Molle di Studi sull'Intelligenza Artificiale",
         role: "PostDoc",
         thesistopic: "",
